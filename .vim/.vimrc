@@ -1,7 +1,7 @@
 set number			" Always show line numbers:
 set scrolloff=5			" keep at least 5 lines around the cursor
 
-# Change prefix key 
+" Change prefix key 
 unbind C-b
 set -g prefix `
 bind-key ` send-prefix
