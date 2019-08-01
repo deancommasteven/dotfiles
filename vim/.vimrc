@@ -1,3 +1,9 @@
-set number			" Always show line numbers:
-set scrolloff=5			" keep at least 5 lines around the cursor
+" Keep at least 5 lines around the cursor
+set scrolloff=5		
 
+" Buffer Maps
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+
+" Status line
+set ruler
