@@ -2,7 +2,7 @@
 # Pull info from cht.sh
 #--------------------------------------
 cht() {
-    curl -s cht.sh/$1 | less -R
+    curl -s cht.sh/$1?style=bw | less -R
 }
 
 #---------------------------------------
