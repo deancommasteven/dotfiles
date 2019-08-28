@@ -1,3 +1,10 @@
+#--------------------------------------
+# Pull info from cht.sh
+#--------------------------------------
+cht() {
+    curl -s cht.sh/$1 | less -R
+}
+
 #---------------------------------------
 # This function should be able to
 # extract almost anything
