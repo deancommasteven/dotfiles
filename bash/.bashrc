@@ -1,3 +1,16 @@
+#-------------------------------------
+# Set prompt look
+#-------------------------------------
+export PS1="[\u@\h \w]$ "
+
+#-------------------------------------
+# Backup function
+#-------------------------------------
+backup() {
+    [ -f "$1" ] || return 1
+    cp -pv "$1" "$1.$(date +%Y-%m-%d.%H%M%S)"
+}
+
 #--------------------------------------
 # Pull info from cht.sh
 #--------------------------------------
@@ -61,3 +74,11 @@ export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 # Other aliases
 #---------------------------------------
 alias h='history | less'
+alias j='jobs -l'
+alias less='less -R'
+alias mirror='rsync --verbose --archive --hard-links --numeric-ids --delete --delete-after --delay-updates --rsh=ssh'
+alias mnt='mount | column -t'
+alias psg='ps aux | grep '
+# alias rpmqa='rpm -qa --queryformat "%{NAME}-%{VERSION}-%{RELEASE}.%{ARCH}\n"'
+alias timestamp='date +%Y-%m-%d.%H%M%S'
+alias tree='tree -C --charset en_US.UTF-8'
