@@ -6,7 +6,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 #-------------------------------------
 # Set prompt look
 #-------------------------------------
-export PS1="[\u@\h \w]$ "
+#export PS1="[\u@\h \w]$ "
 
 #-------------------------------------
 # Backup function
