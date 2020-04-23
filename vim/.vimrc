@@ -1,6 +1,10 @@
 " Keep at least 5 lines around the cursor
 set scrolloff=5		
 
+" Remap PageDown and PageUp to CTRL+J and CTRL+K
+nnoremap <C-J> <PageDown>
+nnoremap <C-K> <PageUp>
+
 " Buffer Maps
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>

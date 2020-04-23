@@ -482,8 +482,8 @@ endif
 " compatibility. Eventually this mapping will be removed so
 " please use the newer g:miniBufExplMapWindowNavVim setting.
 if g:miniBufExplMapWindowNavVim || g:miniBufExplMapWindowNav
-  noremap <C-J> <C-W>j
-  noremap <C-K> <C-W>k
+" noremap <C-J> <C-W>j
+" noremap <C-K> <C-W>k
   noremap <C-H> <C-W>h
   noremap <C-L> <C-W>l
 endif

@@ -1,2 +1,6 @@
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
+# Replace "Duplicate" with “Save As” in Save menus
+defaults write -globalDomain NSUserKeyEquivalents -dict-add 'Save As...' '@$S'
+# Open expanded "Save" view instead of miniature view by default:
+defaults write -g NSNavPanelExpandedStateForSaveMode -boolean true
