@@ -1,7 +1,15 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
 #-------------------------------------
 # Set prompt look
 #-------------------------------------
 #export PS1="[\u@\h \w]$ "
+if [[ $HOSTNAME == steven-work-macbook* || $HOSTNAME == ltksup37594mac* ]]; then
+  export PS1="[local \W]$ "
+fi
 
 #-------------------------------------
 # Backup function

@@ -4,3 +4,5 @@ defaults write com.apple.screencapture disable-shadow -bool true
 defaults write -globalDomain NSUserKeyEquivalents -dict-add 'Save As...' '@$S'
 # Open expanded "Save" view instead of miniature view by default:
 defaults write -g NSNavPanelExpandedStateForSaveMode -boolean true
+# Enable key repeating
+defaults write -g ApplePressAndHoldEnabled -bool false
